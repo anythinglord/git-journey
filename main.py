@@ -1,11 +1,8 @@
-
-class Town:
-    def __init__(self, name):
-        self.name = name
-
-    def getName(self):
-        return self.name
+from Town import Town
 
 print("Town v0.0.1")
 town = Town("xant")
-print(town.getName())
+print('Town name: ', town.getName())
+print('Town population: ', town.getPopulation())
+for i in town.citizens:
+    print('Citizen name: ', i.getName())
