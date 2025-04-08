@@ -8,6 +8,7 @@ class Citizen:
         self.age = 0
         self.maxAge = randint(60, 80)
         self.school = ''
+        self.money = 0
 
     def getName(self):
         return self.name
